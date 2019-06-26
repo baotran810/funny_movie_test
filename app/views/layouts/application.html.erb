@@ -17,9 +17,12 @@
       <div class="container">
       	<%= link_to "Funny Movie", '#', id:"logo"%>
       	<nav>
+          <ul class="nav navbar-nav navbar-left">
+            <%= link_to image_tag("25694.png", alt: "Home logo") %>
+          </ul>
       	  <ul class="nav navbar-nav navbar-right">
-      	    <li><%= link_to "Signin", '#' %></li>
-            </ul>
+      	    <a class="btn btn-primary btn-lg" href="#" role="button">Login/Register</a>
+          </ul>
           </nav>
       </div>
     </header>
