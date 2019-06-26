@@ -19,8 +19,12 @@
       	<nav>
       	  <ul class="nav navbar-nav navbar-right">
       	    <li><%= link_to "Signin", '#' %></li>
+            </ul>
+          </nav>
       </div>
-    	
     </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
