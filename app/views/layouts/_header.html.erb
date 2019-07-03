@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Funny Movie", '#', id:"logo"%>
+        <nav>
+          <ul class="nav navbar-nav navbar-left">
+            <%= link_to image_tag("25694.png", alt: "Home logo") %>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <%= form_for User.new, url: signin_path do |f| %>
+              <%= f.text_field :email, placeholder: 'email' %>
+              <%= f.password_field :password, placeholder: 'password' %>
+              <%#= link_to "Login/Register", signin_path, class: "btn btn-primary btn-lg", role: "button" %>
+              <%= f.submit "Login/Register", class: "btn btn-primary btn-lg" %>
+            <% end %>
+          </ul>
+          </nav>
+      </div>
+</header>

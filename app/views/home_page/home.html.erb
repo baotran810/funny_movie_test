@@ -1,6 +1,12 @@
-
+<div class="list-movies">
  <p>This is youtube link
     <a href="https://www.youtube.com/">Youtube</a>
+
  </p>
+ <% @movies.each do |m| %>
+ 	<%= m.url %>
+ 	<% end %>
+ <%= will_paginate @movies %>
+ </div>
 
 
